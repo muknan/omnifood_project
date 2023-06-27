@@ -61,82 +61,6 @@ body {
 }
 
 /********************************************/
-/* GENERAL REUSABLE COMPONENTS */
-/********************************************/
-
-.container {
-  /* other common container width 1140px */
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3--cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4--cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.6px;
-  color: #333;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #fff;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.8rem;
-  box-shadow: 0px 0px 1.2rem rgb(230, 126, 34, 0.2);
-  display: inline-block;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-}
-
-.btn--full:active,
-.btn--full:hover {
-  background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:active,
-.btn--outline:hover {
-  background-color: #fdf5ed;
-  box-shadow: inset 0 0 0 2px #e67e22;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-/********************************************/
 /* HEADER */
 /********************************************/
 
@@ -267,5 +191,52 @@ body {
 /********************************************/
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+  background-color: #fefbf8;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  background-color: #fdf2e9;
+  width: 60%;
+  padding-bottom: 60%;
+}
+
+.step-img-box::after {
+  background-color: #fae5d3;
+  width: 45%;
+  padding-bottom: 45%;
+}
+
+.step-img {
+  z-index: 1;
+  width: 35%;
 }
