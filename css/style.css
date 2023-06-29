@@ -319,25 +319,6 @@
   color: #e67e22;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  font-size: 3rem;
-  color: #e67e22;
-}
-
 .all-recipes {
   font-size: 1.8rem;
   text-align: center;
@@ -348,12 +329,9 @@
 /********************************************/
 .section-testimonials {
   background-color: #fefbf8;
-}
-
-.testimonials-grid {
   display: grid;
-  grid-template-columns: 1fr 640px 1fr;
-  align-items: center;
+  grid-template-columns: 28fr 44fr 28fr;
+  align-items: start;
 }
 
 .testimonials-container {
@@ -394,6 +372,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-item {
@@ -416,4 +396,96 @@
   background-color: #fdf2e9;
   border-radius: 2rem;
   padding: 2.4rem;
+}
+
+/********************************************/
+/* PRICING SECTION */
+/********************************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  border-radius: 1.1rem;
+  box-shadow: 0px 2px 2rem rgb(104, 57, 16, 0.2);
+  width: 75%;
+  justify-items: end;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pricing-plan--starter {
+  background-color: #fff;
+  justify-self: end;
+}
+
+.pricing-plan--starter:hover {
+  background-color: rgb(238, 238, 238, 0.4);
+  transform: scale(0.99);
+}
+
+.pricing-plan--complete {
+  outline: #cf711f solid 0.3rem;
+  justify-self: start;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete:after {
+  content: "Best value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  top: 24px;
+  right: -34px;
+  background-color: #fcc419;
+  box-shadow: 0px 0rem 0.4rem rgb(0, 0, 0, 0.4);
+  padding: 0.8rem 3.2rem;
+  transform: rotate(42deg);
+}
+
+.pricing-plan--complete:hover {
+  background-color: rgb(250, 229, 211, 0.6);
+  transform: scale(0.99);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
