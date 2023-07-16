@@ -93,6 +93,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -229,6 +233,7 @@ body {
   outline-offset: 0.8rem;*/
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.4) !important;
+  transition: box-shadow 0.3s !important;
 }
 
 /* HELPER CLASSES */

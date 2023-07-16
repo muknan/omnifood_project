@@ -411,7 +411,7 @@
   padding: 4.8rem;
   border-radius: 1.1rem;
   box-shadow: 0px 2px 2rem rgb(104, 57, 16, 0.2);
-  width: 75%;
+  width: 80%;
   justify-items: end;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -526,7 +526,7 @@
 /********************************************/
 
 .section-cta {
-  padding: 9.6em 0;
+  padding: 4.8em 0 12.8rem 0;
 }
 
 .cta {
@@ -618,4 +618,86 @@
 
 .select--first {
   font-weight: 500;
+}
+
+/********************************************/
+/* FOOTER */
+/********************************************/
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer {
+  padding: 12.8rem 0;
+  background-color: #fdf2e9;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  font-size: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contact {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  margin-top: auto;
+  line-height: 1.4;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: color 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
