@@ -23,7 +23,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -90,38 +90,38 @@
 }
 
 .delivered-imgs {
+  position: relative;
   display: flex;
+  align-items: center;
 }
 
-.delivered-imgs img {
+.delivered-imgs::after {
+  content: "250,000+ meals delivered last year!";
+  position: absolute;
+  color: #cf711f;
+  font-size: 1.6rem;
+  font-weight: 600;
+  top: -20%;
+  right: 10%;
+}
+
+.delivered-imgs-cust {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
   border: 3px solid #fdf5ed;
 }
+
 .delivered-imgs img:last-child {
   margin-right: 0;
 }
 
-.temp {
-  position: relative;
-}
-
-.delivered-text {
-  font-size: 1.8rem;
-  color: #cf711f;
-  font-weight: 600;
-  position: absolute;
-  bottom: 3.9rem;
-  left: 22.5rem;
-}
-
 .arrow-up {
-  width: 3rem;
+  width: 2.4rem;
   position: absolute;
-  bottom: 2rem;
-  left: 21rem;
+  top: 20%;
+  right: 57%;
 }
 
 /********************************************/
@@ -329,13 +329,17 @@
 /********************************************/
 .section-testimonials {
   background-color: #fefbf8;
+}
+
+.test {
   display: grid;
-  grid-template-columns: 28fr 44fr 28fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   align-items: start;
+  padding-bottom: 4.8rem;
 }
 
 .testimonials-container {
-  padding: 9.6rem 1.4rem 9.6rem 1.4rem;
+  padding: 9.6rem 1.4rem 0 1.4rem;
 }
 
 .testimonials-container h2 {
@@ -631,6 +635,7 @@
 .footer {
   padding: 12.8rem 0;
   background-color: #fdf2e9;
+  border-top: 1px solid rgb(106, 81, 59, 0.2);
 }
 
 .logo-col {

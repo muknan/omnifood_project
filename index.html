@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -29,11 +32,11 @@
       /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+          <li><a class="main-nav-link" href="#">How it works</a></li>
+          <li><a class="main-nav-link" href="#">Meals</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
     </header>
@@ -47,44 +50,45 @@
             <p class="hero-description">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
-              nutritional needs. We have delivered 250,000+ meals last year!
+              nutritional needs.
             </p>
             <a href="#" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
             <a href="#" class="btn btn--outline">Learn more &darr;</a>
-            <div class="temp">
-              <div class="delivered-meals">
-                <div class="delivered-imgs">
-                  <img
-                    src="img/customers/customer-1.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-2.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-3.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-4.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-5.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-6.jpg"
-                    alt="Customer photo"
-                  />
-                </div>
-                <img src="img/arrow-up.png" alt="" class="arrow-up" />
-                <p class="delivered-text">
-                  250,000+ meals delivered last year!
-                </p>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="delivered-imgs-cust"
+                  src="img/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
+                <img src="img/up.png" alt="" class="arrow-up" />
               </div>
             </div>
           </div>
@@ -319,181 +323,181 @@
         </div>
       </section>
       <section class="section-testimonials">
-        <!-- <div class="container center-text">
-        <span class="subheading">Testimonials</span>
-        <h2 class="heading-secondary">Hear from our customers</h2>
-      </div> -->
-        <div class="gallery">
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-1.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-2.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-3.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-4.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-5.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-6.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-13.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-14.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-        </div>
-        <div class="testimonials-container">
-          <div class="container center-text">
-            <span class="subheading">Testimonials</span>
-            <h2 class="heading-secondary">Hear from our customers</h2>
-          </div>
-          <div class="testimonials">
-            <figure class="testimonial">
+        <div class="test">
+          <div class="gallery">
+            <figure class="gallery-item">
               <img
-                src="img/customers/dave.jpg"
-                class="testimonial-img"
-                alt="Photo of customer Dave Bryson"
+                src="img/gallery/gallery-1.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
               />
-              <blockquote class="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </blockquote>
-              <p class="testimonial-author">&mdash; Dave Bryson</p>
             </figure>
-            <figure class="testimonial">
+            <figure class="gallery-item">
               <img
-                src="img/customers/ben.jpg"
-                class="testimonial-img"
-                alt="Photo of customer Ben Hadley"
+                src="img/gallery/gallery-2.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
               />
-              <blockquote class="testimonial-text">
-                The AI algorithm is crazy good, it chooses the right meals for
-                me every time. It's amazing not to worry about food anymore!
-              </blockquote>
-              <p class="testimonial-author">&mdash; Ben Hadley</p>
             </figure>
-            <figure class="testimonial">
+            <figure class="gallery-item">
               <img
-                src="img/customers/steve.jpg"
-                class="testimonial-img"
-                alt="Photo of customer Steve Miller"
+                src="img/gallery/gallery-3.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
               />
-              <blockquote class="testimonial-text">
-                Omnifood is a life saver! I just started a company, so there's
-                no time for cooking. I couldn't live without my daily meals now!
-              </blockquote>
-              <p class="testimonial-author">&mdash; Steve Miller</p>
             </figure>
-            <figure class="testimonial">
+            <figure class="gallery-item">
               <img
-                src="img/customers/hannah.jpg"
-                class="testimonial-img"
-                alt="Photo of customer Hannah Smith"
+                src="img/gallery/gallery-4.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
               />
-              <blockquote class="testimonial-text">
-                I got Omnifood for the whole family, and it frees up so much
-                time! Plus, everything is organic and vegan and without plastic.
-              </blockquote>
-              <p class="testimonial-author">&mdash; Hannah Smith</p>
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-5.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-6.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-13.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-14.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
             </figure>
           </div>
-        </div>
-        <div class="gallery">
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-7.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-8.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-9.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-10.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-11.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-12.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-15.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-16.jpg"
-              alt="Photo of a beautifully arranged food"
-              class="gallery-img"
-            />
-          </figure>
+          <div class="testimonials-container">
+            <div class="container center-text">
+              <span class="subheading">Testimonials</span>
+              <h2 class="heading-secondary">Hear from our customers</h2>
+            </div>
+            <div class="testimonials">
+              <figure class="testimonial">
+                <img
+                  src="img/customers/dave.jpg"
+                  class="testimonial-img"
+                  alt="Photo of customer Dave Bryson"
+                />
+                <blockquote class="testimonial-text">
+                  Inexpensive, healthy and great-tasting meals, without even
+                  having to order manually! It feels truly magical.
+                </blockquote>
+                <p class="testimonial-author">&mdash; Dave Bryson</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="img/customers/ben.jpg"
+                  class="testimonial-img"
+                  alt="Photo of customer Ben Hadley"
+                />
+                <blockquote class="testimonial-text">
+                  The AI algorithm is crazy good, it chooses the right meals for
+                  me every time. It's amazing not to worry about food anymore!
+                </blockquote>
+                <p class="testimonial-author">&mdash; Ben Hadley</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="img/customers/steve.jpg"
+                  class="testimonial-img"
+                  alt="Photo of customer Steve Miller"
+                />
+                <blockquote class="testimonial-text">
+                  Omnifood is a life saver! I just started a company, so there's
+                  no time for cooking. I couldn't live without my daily meals
+                  now!
+                </blockquote>
+                <p class="testimonial-author">&mdash; Steve Miller</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="img/customers/hannah.jpg"
+                  class="testimonial-img"
+                  alt="Photo of customer Hannah Smith"
+                />
+                <blockquote class="testimonial-text">
+                  I got Omnifood for the whole family, and it frees up so much
+                  time! Plus, everything is organic and vegan and without
+                  plastic.
+                </blockquote>
+                <p class="testimonial-author">&mdash; Hannah Smith</p>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-7.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-8.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-9.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-10.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-11.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-12.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-15.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/gallery/gallery-16.jpg"
+                alt="Photo of a beautifully arranged food"
+                class="gallery-img"
+              />
+            </figure>
+          </div>
         </div>
       </section>
       <section class="section-pricing">
@@ -568,7 +572,6 @@
             Both plan features:
           </aside>
         </div>
-
         <div class="container grid grid--4-cols">
           <div class="feature">
             <ion-icon class="feature-icon" name="happy-outline"></ion-icon>
