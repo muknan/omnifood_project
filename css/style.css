@@ -87,22 +87,19 @@
 
 .delivered-meals {
   margin-top: 8rem;
-}
-
-.delivered-imgs {
-  position: relative;
   display: flex;
   align-items: center;
+  gap: 3rem;
 }
 
-.delivered-imgs::after {
-  content: "250,000+ meals delivered last year!";
-  position: absolute;
-  color: #cf711f;
+.delivered-meals-text {
   font-size: 1.6rem;
   font-weight: 600;
-  top: -20%;
-  right: 10%;
+  display: inline-block;
+}
+
+.delivered-meals-text.num {
+  color: #cf711f;
 }
 
 .delivered-imgs-cust {
@@ -115,13 +112,6 @@
 
 .delivered-imgs img:last-child {
   margin-right: 0;
-}
-
-.arrow-up {
-  width: 2.4rem;
-  position: absolute;
-  top: 20%;
-  right: 57%;
 }
 
 /********************************************/
