@@ -300,6 +300,10 @@ Instead, 1rem = 1em = 16px */
     width: 80%;
   }
 
+  .delivered-imgs-cust {
+    border: 2px solid #fdf5ed;
+  }
+
   .logos img {
     height: 1.2rem;
   }
