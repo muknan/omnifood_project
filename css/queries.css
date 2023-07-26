@@ -363,6 +363,31 @@ Instead, 1rem = 1em = 16px */
     padding: 0 1rem 0 0.5rem;
     gap: 1rem;
   }
+
+  .section-pricing {
+    padding: 4.8rem 0 4rem 0;
+  }
+
+  .section-cta {
+    padding: 4rem 0 8rem 0;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .footer {
+    padding: 8rem 0;
+  }
 }
 /*
 FONT SIZE SYSTEM (px)
