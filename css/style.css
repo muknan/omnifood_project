@@ -11,6 +11,7 @@
   /* Because we want header to be sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -49,12 +50,31 @@
   color: #fff;
   border-radius: 0.9rem;
   transition: background-color 0.3s;
-  margin-left: 4.8rem;
+  margin-left: 2.4rem;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* Mobile Section */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /********************************************/
@@ -89,17 +109,20 @@
   margin-top: 8rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1.6rem;
 }
 
 .delivered-meals-text {
   font-size: 1.6rem;
   font-weight: 600;
-  display: inline-block;
 }
 
-.delivered-meals-text.num {
+.delivered-meals-text span {
   color: #cf711f;
+}
+
+.delivered-imgs {
+  display: flex;
 }
 
 .delivered-imgs-cust {
@@ -111,7 +134,7 @@
 }
 
 .delivered-imgs img:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 /********************************************/
@@ -224,12 +247,14 @@
 
 .meal-icon {
   color: #e67e22;
-  font-size: 2.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .veg-icon,
 .vegan-paleo-icon {
-  font-size: 3.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
   position: absolute;
   background-color: rgb(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -361,7 +386,8 @@
   color: rgb(207, 113, 31, 0.7);
 }
 
-.gallery {
+.gallery--1,
+.gallery--2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -433,12 +459,12 @@
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
-  top: 24px;
-  right: -34px;
+  top: 32px;
+  right: -40px;
   background-color: #fcc419;
   box-shadow: 0px 0rem 0.4rem rgb(0, 0, 0, 0.4);
-  padding: 0.8rem 3.2rem;
-  transform: rotate(42deg);
+  padding: 0.8rem 6rem;
+  transform: rotate(40deg);
 }
 
 .pricing-plan--complete:hover {
@@ -496,7 +522,8 @@
 
 .feature-icon {
   color: #e67e22;
-  font-size: 3.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
   margin-bottom: 3.2rem;
   background-color: #fdf2e9;
   border-radius: 50%;
@@ -645,7 +672,8 @@
 }
 
 .social-icon {
-  font-size: 2.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .copyright {
